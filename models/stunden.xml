@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<woche>
+        <stunde id="123" tag="1" nr="5" name="Ma DAZ">
+            <schueler name="Anton"/>
+            <schueler name="Berta"/>
+            <schueler name="Caroline"/>
+        </stunde>
+        <stunde id="124" tag="1" nr="7" name="Ma Gk12">
+            <schueler name="Anton2"/>
+            <schueler name="Berta2"/>
+            <schueler name="Caroline2"/>
+        </stunde>
+        <stunde id="125" tag="2" nr="1" name="Ph 10 G">
+            <schueler name="Anto3"/>
+            <schueler name="Berta3"/>
+            <schueler name="Caroline3"/>
+        </stunde>
+</woche>
