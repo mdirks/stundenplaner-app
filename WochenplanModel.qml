@@ -3,11 +3,11 @@ import QtQuick.XmlListModel 2.0
 
 
 XmlListModel {
-    query: "/woche/stunde"
+    query: "/woche/Stundenplaneintrag"
 
-    XmlRole { name: "title"; query: "@name/string()" }
-    XmlRole { name: "tag"; query: "@tag/string()" }
-    XmlRole { name: "nr"; query: "@nr/string()" }
-    XmlRole { name: "sid"; query: "@id/string()" }
+    XmlRole { name: "Name"; query: "@Name/string()" }
+    XmlRole { name: "Tag"; query: "@Tag/string()" }
+    XmlRole { name: "Nr"; query: "@Nr/string()" }
+    XmlRole { name: "ID"; query: "@ID/string()" }
 }
 

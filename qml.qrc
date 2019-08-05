@@ -44,5 +44,6 @@
         <file>models/stunden.xml</file>
         <file>StundenView.qml</file>
         <file>WochenplanModel.qml</file>
+        <file>CameraView.qml</file>
     </qresource>
 </RCC>

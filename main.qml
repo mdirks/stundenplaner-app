@@ -1,7 +1,9 @@
-import QtQuick 2.7
+import QtQuick 2.1
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
+//import QtQuick.Dialogs 1.3
 import QtQuick.XmlListModel 2.0
+
 
 
 ApplicationWindow {
@@ -28,7 +30,7 @@ ApplicationWindow {
                 }
                 onClicked: {
                     stackView.pop()
-                    backButton.visible=false
+                    //backButton.visible=false
                 }
             }
 
@@ -71,7 +73,7 @@ ApplicationWindow {
 
     WochenplanModel {
         id: wochenplanModel
-        source: "file:///home/mopp/dev/stundenplaner-app/models/stunden.xml"
+        source: "models/stunden.xml"
     }
 
 
@@ -92,14 +94,14 @@ ApplicationWindow {
 
             delegate: ItemDelegate {
                 width: parent.width
-                text: title + ":" + sid//model.title
+                text: Name + "\n" + Tag
                 highlighted: ListView.isCurrentItem
 
 
 
                 onClicked: {
                     listView.currentIndex = index
-                    stundenView.vstundenId = sid
+                    stundenView.vstundenId = ID
                     backButton.visible=true
                     //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
                     drawer.close()
@@ -117,25 +119,29 @@ ApplicationWindow {
         id: stackView
         anchors.fill: parent
 
-        initialItem:  GridView {
+        initialItem: stundenView
+
+            /*
+            GridView {
             id: stackGridView
 
-            focus: true
+            focus: visible //true
             currentIndex: -1
-            anchors.fill: parent
+            //anchors.fill: parent
 
             model: wochenplanModel
 
             delegate: ItemDelegate {
                 width: parent.width
-                text: title + ":" + sid//model.title
+                text: Name + "\n" + Tag
                 highlighted: ListView.isCurrentItem
+
 
 
 
                 onClicked: {
                     stackGridView.currentIndex = index
-                    stundenView.vstundenId = sid
+                    stundenView.vstundenId = ID
                     backButton.visible=true
                     //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
                     stackView.push(stundenView)
@@ -146,16 +152,26 @@ ApplicationWindow {
 
             ScrollIndicator.vertical: ScrollIndicator { }
         } //initialItem
-
+        */
 
 
         StundenView {
             id: stundenView
-            anchors.fill: parent
+            //focus: visible
+            //anchors.fill: parent
         }
 
 
+
+
+
     }//StackView
+
+    CameraView {
+        id: cameraView
+        //anchors.fill: parent
+        //anchors.centerIn: parent
+    }
 
 
     Dialog {

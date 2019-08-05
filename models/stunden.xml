@@ -1,18 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <woche>
-        <stunde id="123" tag="1" nr="5" name="Ma DAZ">
-            <schueler name="Anton"/>
-            <schueler name="Berta"/>
-            <schueler name="Caroline"/>
-        </stunde>
-        <stunde id="124" tag="1" nr="7" name="Ma Gk12">
-            <schueler name="Anton2"/>
-            <schueler name="Berta2"/>
-            <schueler name="Caroline2"/>
-        </stunde>
-        <stunde id="125" tag="2" nr="1" name="Ph 10 G">
-            <schueler name="Anto3"/>
-            <schueler name="Berta3"/>
-            <schueler name="Caroline3"/>
-        </stunde>
+
+<Stundenplaneintrag ID="931" Name="Ph 9.2 G" Nr="3" Tag="1">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="932" Name="Ma-12-Gk" Nr="2" Tag="1">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="935" Name="Ph-9.1-G" Nr="5" Tag="2">
+  <Sitzplan>
+   <Platz Vorname="Yannik" Nachname="Szczygiel" x="217" y="0"/>
+   <Platz Vorname="Julia" Nachname="Kolodziej" x="725" y="5"/>
+   <Platz Vorname="Viviana" Nachname="Di Sipio" x="546" y="5"/>
+   <Platz Vorname="Fatima" Nachname="Arslan" x="633" y="6"/>
+   <Platz Vorname="Jordan" Nachname="Scheffler" x="312" y="0"/>
+   <Platz Vorname="Amelie" Nachname="Schmid" x="1" y="105"/>
+   <Platz Vorname="Johanna" Nachname="Erbach" x="115" y="103"/>
+   <Platz Vorname="Samantha" Nachname="Ertel" x="547" y="116"/>
+   <Platz Vorname="Paula" Nachname="Rothe" x="0" y="210"/>
+   <Platz Vorname="Lena" Nachname="Schwarzenberg" x="115" y="211"/>
+   <Platz Vorname="Celine" Nachname="Oppers" x="224" y="216"/>
+   <Platz Vorname="Laura" Nachname="Kersten" x="327" y="215"/>
+   <Platz Vorname="Jakub " Nachname="Wisniewski" x="543" y="220"/>
+   <Platz Vorname="Vincent" Nachname="Börner" x="645" y="220"/>
+  </Sitzplan>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="936" Name="Ma-12-Gk" Nr="3" Tag="2">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="937" Name="Ph-12-LK" Nr="1" Tag="2">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="941" Name="Ph-12-LK" Nr="5" Tag="3">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="942" Name="Ph-11.4-F" Nr="3" Tag="3">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="943" Name="Ph-10.1-E" Nr="1" Tag="3">
+  <Sitzplan>
+   <Platz Vorname="Jana" Nachname="Göldner" x="3" y="3"/>
+   <Platz Vorname="Laura" Nachname="Khan" x="209" y="0"/>
+   <Platz Vorname="Charlotte" Nachname="Laurent" x="304" y="4"/>
+   <Platz Vorname="David" Nachname="Reichenbach" x="699" y="6"/>
+   <Platz Vorname="Louisa" Nachname="Fuchs" x="803" y="7"/>
+   <Platz Vorname="Silja" Nachname="Bär" x="905" y="12"/>
+   <Platz Vorname="Imke" Nachname="Weber" x="0" y="143"/>
+   <Platz Vorname="Luisa" Nachname="Marweld" x="98" y="141"/>
+   <Platz Vorname="Mariam" Nachname="Aliabadi" x="206" y="143"/>
+   <Platz Vorname="Felicia" Nachname="Zawadzki" x="309" y="144"/>
+   <Platz Vorname="Klara" Nachname="Walter" x="906" y="142"/>
+   <Platz Vorname="Sarah " Nachname="Lorenz" x="600" y="142"/>
+   <Platz Vorname="Emma" Nachname="Scholz" x="505" y="142"/>
+   <Platz Vorname="Pauline" Nachname="Fuchs" x="799" y="142"/>
+   <Platz Vorname="Julia" Nachname="Ziob" x="699" y="141"/>
+   <Platz Vorname="Lilly" Nachname="Fritsch" x="507" y="260"/>
+   <Platz Vorname="Lucas" Nachname="Weitz" x="604" y="263"/>
+   <Platz Vorname="Jasper" Nachname="Glöckner" x="702" y="263"/>
+   <Platz Vorname="Anna-Lena" Nachname="Herzog" x="815" y="262"/>
+   <Platz Vorname="Charlotte" Nachname="Schuch" x="910" y="260"/>
+   <Platz Vorname="Artjom" Nachname="Danko" x="301" y="266"/>
+   <Platz Vorname="Jonas" Nachname="Bodenburg" x="202" y="272"/>
+   <Platz Vorname="Leonie" Nachname="Sala" x="96" y="270"/>
+   <Platz Vorname="Anastasia" Nachname="Prager" x="9" y="275"/>
+  </Sitzplan>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="947" Name="Ph-8.2-E" Nr="3" Tag="4">
+  <Sitzplan>
+   <Platz Vorname="Alina" Nachname="Supper" x="491" y="4"/>
+   <Platz Vorname="Julia" Nachname="Meyer" x="580" y="5"/>
+   <Platz Vorname="Nejla" Nachname="Ajsic" x="670" y="0"/>
+   <Platz Vorname="Lucia" Nachname="Reimer" x="0" y="116"/>
+   <Platz Vorname="Melanie" Nachname="Leibert" x="853" y="124"/>
+   <Platz Vorname="Emily" Nachname="Lindt" x="761" y="125"/>
+   <Platz Vorname="Mika" Nachname="Krpelj" x="665" y="119"/>
+   <Platz Vorname="Konstantin" Nachname="Kühl" x="575" y="117"/>
+   <Platz Vorname="Luis" Nachname="Beganovic" x="484" y="120"/>
+   <Platz Vorname="Lora" Nachname="Bauer" x="296" y="113"/>
+   <Platz Vorname="Nicole" Nachname="Gensch" x="198" y="113"/>
+   <Platz Vorname="Jennifer" Nachname="Bergt" x="102" y="116"/>
+   <Platz Vorname="Dejan" Nachname="Sintic" x="495" y="271"/>
+   <Platz Vorname="Leopold" Nachname="Parak" x="632" y="270"/>
+   <Platz Vorname="Anton" Nachname="Kompe" x="784" y="265"/>
+  </Sitzplan>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="948" Name="Ph-12-LK" Nr="5" Tag="4">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="949" Name="Ma-13-G" Nr="6" Tag="4">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="950" Name="Ma-11-P" Nr="1" Tag="4">
+  <Sitzplan>
+   <Platz Vorname="Katharina" Nachname="Maske" x="0" y="149"/>
+   <Platz Vorname="Antonia" Nachname="Druschke" x="120" y="149"/>
+   <Platz Vorname="Annika" Nachname="Bothe" x="240" y="149"/>
+   <Platz Vorname="Deniz" Nachname="Alkan" x="833" y="0"/>
+   <Platz Vorname="Nils" Nachname="Potzi" x="480" y="149"/>
+   <Platz Vorname="Paul" Nachname="Sandner" x="600" y="149"/>
+   <Platz Vorname="Finn" Nachname="Gaffron" x="720" y="149"/>
+   <Platz Vorname="Monika" Nachname="Nekipelova" x="840" y="149"/>
+   <Platz Vorname="Marlena" Nachname="Nierenz" x="0" y="325"/>
+   <Platz Vorname="Nils" Nachname="West" x="121" y="327"/>
+   <Platz Vorname="Moritz" Nachname="Becker" x="237" y="327"/>
+   <Platz Vorname="Sohie" Nachname="Juditzki" x="336" y="330"/>
+   <Platz Vorname="Philipp" Nachname="Hildebrandt" x="680" y="334"/>
+   <Platz Vorname="Jerome" Nachname="Vieillard" x="789" y="334"/>
+  </Sitzplan>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="955" Name="Ph-7.22" Nr="2" Tag="5">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="956" Name="Ma-13-G" Nr="4" Tag="5">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+ <Stundenplaneintrag ID="957" Name="Ph-7.14" Nr="1" Tag="5">
+  <Sitzplan/>
+ </Stundenplaneintrag>
+
+
 </woche>
