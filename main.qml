@@ -22,21 +22,26 @@ ApplicationWindow {
 
             ToolButton {
                 id : backButton
+                enabled: stackView.depth > 1
+                property string popText
                 contentItem: Image {
                     fillMode: Image.Pad
                     horizontalAlignment: Image.AlignHCenter
                     verticalAlignment: Image.AlignVCenter
-                    source: "images/back.png"
+                    source: "images/back.png"                    
                 }
+
                 onClicked: {
                     stackView.pop()
+                    titleLabel.text=popText
+                    console.debug("Stack poped()")
                     //backButton.visible=false
                 }
             }
 
             Label {
                 id: titleLabel
-                text: stackGridView.currentItem ? stackGridView.currentItem.text : "Gallery"
+                text: stackView.currentItem ? stackView.currentItem.text : "keine Auswahl"
                 font.pixelSize: 20
                 elide: Label.ElideRight
                 horizontalAlignment: Qt.AlignHCenter
@@ -51,7 +56,10 @@ ApplicationWindow {
                     verticalAlignment: Image.AlignVCenter
                     source: "images/menu.png"
                 }
-                onClicked: optionsMenu.open()
+                onClicked: {
+                    console.debug("Tool clicked")
+                    optionsMenu.open()
+                }
 
                 Menu {
                     id: optionsMenu
@@ -103,6 +111,7 @@ ApplicationWindow {
                     listView.currentIndex = index
                     stundenView.vstundenId = ID
                     backButton.visible=true
+                    titleLabel.text = Name + "/" + Tag
                     //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
                     drawer.close()
                 }
@@ -113,6 +122,13 @@ ApplicationWindow {
             ScrollIndicator.vertical: ScrollIndicator { }
         }
     }//Drawer
+
+
+    StundenView {
+        id: stundenView
+        //focus: visible
+        //anchors.fill: parent
+    }
 
 
     StackView {
@@ -155,11 +171,7 @@ ApplicationWindow {
         */
 
 
-        StundenView {
-            id: stundenView
-            //focus: visible
-            //anchors.fill: parent
-        }
+
 
 
 
@@ -167,11 +179,25 @@ ApplicationWindow {
 
     }//StackView
 
+    Rectangle {
+        id:cameraView
+        visible: false
+        property string schueler: "Unbekannt"
+        Text {
+            id: text
+            text: qsTr(cameraView.schueler)
+            anchors.fill: parent
+        }
+    }
+
+
+
     CameraView {
-        id: cameraView
+        id: cameraViewTrue
         //anchors.fill: parent
         //anchors.centerIn: parent
     }
+
 
 
     Dialog {

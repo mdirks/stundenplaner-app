@@ -5,7 +5,7 @@ import QtMultimedia 5.8
 Rectangle {
     //width: 200; height: 100
     color: "green"
-
+    property string schueler: "Unbekannt"
 
     Camera {
         id: camera
@@ -38,15 +38,8 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-        backButton.visible=true
-        //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
-        stackView.pop()
+            camera.imageCapture.captureToLocation("/home/mopp/capture.jpg");
         }
-    }//MouseArea
-    /*
-    Image {
-        id: photoPreview
     }
-    */
 
 }//Item

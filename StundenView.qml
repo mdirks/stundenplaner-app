@@ -18,10 +18,21 @@ Flickable {
     }
     */
 
+    StundenModel {
+        id: stundenModel
+        stundenId: vstundenId
+    }
+
+    onVstundenIdChanged: {stundenModel.reload()}
+
     Repeater {
+        model: stundenModel
+        /*
         model: StundenModel {
                     stundenId :  vstundenId
                 }
+        */
+
 
 
 
@@ -35,21 +46,26 @@ Flickable {
           Text { text: name; anchors.horizontalCenter: parent.horizontalCenter}
           */
           Text {
-          text: Vorname + "\n" + Nachname
-          //width: parent.width
+            text: Vorname + "\n" + Nachname
+            //width: parent.width
           }
 
-          /*
-          onClicked: {
-              stackGridView.currentIndex = index
-              stundenView.vstundenId = stundenView.currentIndex
-              backButton.visible=true
-              //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
-              stackView.push(cameraView)
-              }
-
-           }
-           */
-        }
-    }
+          MouseArea {
+              anchors.fill: parent
+              onClicked: {
+                  stackView.push(cameraViewTrue,{"schueler":Vorname})
+                  backButton.popText=titleLabel.text
+                  titleLabel.text = titleLabel.text + " -- " + Vorname
+                  /*
+                  stackGridView.currentIndex = index
+                  stundenView.vstundenId = stundenView.currentIndex
+                  backButton.visible=true
+                  //stackView.push({ item : StundenView.createObject(), properties:{vstundenId:sid}})
+                  stackView.push(cameraView)
+                  }
+                  */
+               }
+           }//MouseArea
+        }//Rectangle
+    }//Repeater
 }
